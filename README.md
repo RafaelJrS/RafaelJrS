@@ -58,6 +58,7 @@ src="https://raw.githubusercontent.com/gist/RafaelJrS/52f89361c6836344284ccba97c
 
 ###
 
+<!---
 ![Snake animation](https://github.com/rafaeljrs/rafaeljrs/blob/output/github-contribution-grid-snake.svg)
 
 <!---
