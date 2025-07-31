@@ -48,6 +48,14 @@ src="https://raw.githubusercontent.com/gist/RafaelJrS/52f89361c6836344284ccba97c
 <a href="https://www.linkedin.com/in/rafael-junio-da-silva" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 </div>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph.svg">
+</picture>
+
+_generated with [rafaeljrs/pacman-contribution-graph](https://rafaeljrs.github.io/pacman-contribution-graph/)_
+
 ![Snake animation](https://github.com/rafaeljrs/rafaeljrs/blob/output/github-contribution-grid-snake.svg)
 
 <!---
