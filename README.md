@@ -54,7 +54,8 @@ src="https://raw.githubusercontent.com/gist/RafaelJrS/52f89361c6836344284ccba97c
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/rafaeljrs/rafaeljrs/output/pacman-contribution-graph.svg">
 </picture>
 
-_generated with [rafaeljrs/pacman-contribution-graph](https://rafaeljrs.github.io/pacman-contribution-graph/)_
+_generated with [abozanona/pacman-contribution-graph](https://abozanona.github.io/pacman-contribution-graph/)_
+
 
 ![Snake animation](https://github.com/rafaeljrs/rafaeljrs/blob/output/github-contribution-grid-snake.svg)
 

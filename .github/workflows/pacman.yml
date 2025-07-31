@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: generate pacman-contribution-graph.svg
-        uses: rafaeljrs/pacman-contribution-graph@main
+        uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: RafaelJrS
 
