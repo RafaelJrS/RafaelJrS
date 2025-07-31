@@ -61,6 +61,10 @@ src="https://raw.githubusercontent.com/gist/RafaelJrS/52f89361c6836344284ccba97c
 <!---
 ![Snake animation](https://github.com/rafaeljrs/rafaeljrs/blob/output/github-contribution-grid-snake.svg)
 
+Pegar Skill Icons: https://skillicons.dev/
+
+Editor de profile: https://profile-readme-generator.com/pt-BR
+
 <!---
 RafaelJrS/RafaelJrS is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
