@@ -48,6 +48,12 @@ src="https://raw.githubusercontent.com/gist/RafaelJrS/52f89361c6836344284ccba97c
 <a href="https://www.linkedin.com/in/rafael-junio-da-silva" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 </div>
 
+
+
+
+![Snake animation](https://github.com/rafaeljrs/rafaeljrs/blob/output/github-contribution-grid-snake.svg)
+
+<!---
 ###
 
 <picture>
@@ -57,9 +63,6 @@ src="https://raw.githubusercontent.com/gist/RafaelJrS/52f89361c6836344284ccba97c
 </picture>
 
 ###
-
-<!---
-![Snake animation](https://github.com/rafaeljrs/rafaeljrs/blob/output/github-contribution-grid-snake.svg)
 
 Pegar Skill Icons: https://skillicons.dev/
 
