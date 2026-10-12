@@ -10,7 +10,7 @@
 <img align="right" height="590cm" src="https://raw.githubusercontent.com/gist/RafaelJrS/52f89361c6836344284ccba97ccf41af/raw/8a7518faab9ff41610f9a138ca7abe2d2b6ff707/gitprofilecard.svg"/>
 
 <h1 align="left">Olá <img src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" width="30px">, sou Rafael Silva</h1>
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=RafaelJrS&color=yellow" alt="Profile views" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=RafaelJSilva&color=yellow" alt="Profile views" /> </p>
 
 ### 🧠 Analista e Engenheiro de Qualidade de Software (QA)
 
@@ -42,7 +42,7 @@ Sou um especialista em Qualidade de Software certificado pela **CTFL (ISTQB)**, 
 
 <div align="center">
   <a href="https://github.com/RafaelJrS">
-   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=RafaelJrS&show_icons=true&theme=tokyonight&include_all_commits=true"/>
+   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=RafaelJSilva&show_icons=true&theme=tokyonight&include_all_commits=true"/>
   </a>
 </div>
 
@@ -81,7 +81,7 @@ Sou um especialista em Qualidade de Software certificado pela **CTFL (ISTQB)**, 
 <img align="right" height="590cm" src="https://raw.githubusercontent.com/gist/RafaelJrS/52f89361c6836344284ccba97ccf41af/raw/8a7518faab9ff41610f9a138ca7abe2d2b6ff707/gitprofilecard.svg"/>
 
 <h1 align="left">Hi <img src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" width="30px">, I'm Rafael Silva</h1>
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=RafaelJrS&color=blue" alt="Profile views" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=RafaelJSilva&color=blue" alt="Profile views" /> </p>
 
 ### 🧠 Software Quality Analyst & QA Engineer
 
@@ -113,7 +113,7 @@ I am a Software Quality specialist certified by **CTFL (ISTQB)**, focused on ens
 
 <div align="center">
   <a href="https://github.com/RafaelJrS">
-   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=RafaelJrS&show_icons=true&theme=tokyonight&include_all_commits=true"/>
+   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=RafaelJSilva&show_icons=true&theme=tokyonight&include_all_commits=true"/>
   </a>
 </div>
 
