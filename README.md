@@ -1,3 +1,11 @@
+<div align="center">
+  <a href="#-português">🇧🇷 Português</a> | <a href="#-english">🇺🇸 English</a>
+</div>
+<br>
+
+<!-- ==================== VERSÃO EM PORTUGUÊS ==================== -->
+<h1 id="-português"></h1>
+
 <img align="right" height="590cm" src="https://raw.githubusercontent.com/gist/RafaelJrS/52f89361c6836344284ccba97ccf41af/raw/8a7518faab9ff41610f9a138ca7abe2d2b6ff707/gitprofilecard.svg"/>
 
 <h1 align="left">Olá <img src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" width="30px">, sou Rafael Silva</h1>
@@ -32,51 +40,3 @@ Utilizo as melhores ferramentas do mercado para arquitetar soluções de automa�
 </div>
 
 <br>
-
-## ⚙️ GitHub Analytics
-
-<div align="center">
-  <a href="https://github.com/RafaelJrS">
-   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=RafaelJrS&show_icons=true&theme=tokyonight&include_all_commits=true"/>
-  </a>
-</div>
-
-<br>
-
-## 🐍 Minhas Contribuições
-###
-
-
-
-<picture>
-
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rafaeljrs/rafaeljrs/output/pacman-contribution-graph-dark.svg">
-
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rafaeljrs/rafaeljrs/output/pacman-contribution-graph.svg">
-
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/rafaeljrs/rafaeljrs/output/pacman-contribution-graph.svg">
-
-</picture>
-
-<!---
-
-RafaelJrS/RafaelJrS is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-You can click the Preview link to take a look at your changes.
-
-Pegar Skill Icons: https://skillicons.dev/
-
-Editor de profile: https://profile-readme-generator.com/pt-BR
-
----> 
-
-## 🤝 Vamos Conectar!
-
-<div align="left"> 
-  <a href="mailto:silvarafaeljr@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank">
-  </a>
-  <a href="https://www.linkedin.com/in/rafael-junio-da-silva">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank">
-  </a>
-</div>
