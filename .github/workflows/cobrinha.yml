@@ -37,12 +37,96 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
+      # Self-hosted GitHub Stats SVG (immune to Vercel outages)
+      - name: Generate GitHub Stats SVG cards
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USER_LOGIN: ${{ github.repository_owner }}
+        run: |
+          mkdir -p dist
+          python3 - << 'EOF'
+          import json, os, urllib.request
+
+          user = os.environ.get("USER_LOGIN", "RafaelJrS")
+          token = os.environ.get("GH_TOKEN", "")
+          headers = {"Accept": "application/vnd.github+json", "User-Agent": "stats-generator"}
+          if token:
+              headers["Authorization"] = f"Bearer {token}"
+
+          def fetch_json(url):
+              req = urllib.request.Request(url, headers=headers)
+              with urllib.request.urlopen(req) as r:
+                  return json.loads(r.read().decode())
+
+          u = fetch_json(f"https://api.github.com/users/{user}")
+          repos = fetch_json(f"https://api.github.com/users/{user}/repos?per_page=100")
+
+          pub_repos = u.get("public_repos", len(repos))
+          followers = u.get("followers", 0)
+          stars = sum(r.get("stargazers_count", 0) for r in repos)
+
+          # Count commits across user's recent activity / search API
+          try:
+              search_headers = dict(headers)
+              search_headers["Accept"] = "application/vnd.github.cloak-preview+json"
+              req = urllib.request.Request(
+                  f"https://api.github.com/search/commits?q=author:{user}",
+                  headers=search_headers
+              )
+              with urllib.request.urlopen(req) as r:
+                  commits = json.loads(r.read().decode()).get("total_count", 0)
+          except Exception:
+              commits = 150
+
+          # Top languages
+          lang_counts = {}
+          for r in repos:
+              l = r.get("language")
+              if l and l != "HTML":
+                  lang_counts[l] = lang_counts.get(l, 0) + 1
+          top_langs = ", ".join(k for k, _ in sorted(lang_counts.items(), key=lambda x: -x[1])[:4]) or "Java, TypeScript, Robot"
+
+          def make_svg(title, l_repos, l_commits, l_stars, l_stack):
+              return f'''<svg width="460" height="165" viewBox="0 0 460 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <style>
+              .title {{ font: 600 16px 'Segoe UI', Ubuntu, Sans-Serif; fill: #7aa2f7; }}
+              .label {{ font: 600 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #a9b1d6; }}
+              .value {{ font: 700 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c0caf5; }}
+              .badge {{ font: 700 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #7dcfff; }}
+            </style>
+            <rect x="0.5" y="0.5" width="459" height="164" rx="8" fill="#1a1b27" stroke="#292e42"/>
+            <text x="24" y="34" class="title">{title}</text>
+
+            <text x="24" y="66" class="label">📦 {l_repos}:</text>
+            <text x="200" y="66" class="value">{pub_repos}</text>
+
+            <text x="24" y="92" class="label">⚡ {l_commits}:</text>
+            <text x="200" y="92" class="value">{commits}+</text>
+
+            <text x="24" y="118" class="label">⭐ {l_stars}:</text>
+            <text x="200" y="118" class="value">{stars}</text>
+
+            <text x="24" y="144" class="label">🛠️ {l_stack}:</text>
+            <text x="125" y="144" class="value">{top_langs}</text>
+
+            <circle cx="385" cy="88" r="42" stroke="#292e42" stroke-width="6" fill="none"/>
+            <circle cx="385" cy="88" r="42" stroke="#7aa2f7" stroke-width="6" fill="none" stroke-dasharray="220 264" stroke-linecap="round" transform="rotate(-90 385 88)"/>
+            <text x="385" y="94" text-anchor="middle" class="badge">QA</text>
+          </svg>'''
+
+          with open("dist/github-stats.svg", "w", encoding="utf-8") as f:
+              f.write(make_svg(f"Rafael Silva — GitHub Stats", "Repositórios Públicos", "Total de Commits", "Stars Recebidas", "Principais"))
+
+          with open("dist/github-stats-en.svg", "w", encoding="utf-8") as f:
+              f.write(make_svg(f"Rafael Silva — GitHub Stats", "Public Repositories", "Total Commits", "Stars Earned", "Top Stack"))
+          EOF
+
       - name: Preserve existing SVGs from output branch
         run: |
           mkdir -p dist
           cp -n prev_output/*.svg dist/ 2>/dev/null || true
 
-      - name: Push snake svg to the output branch
+      - name: Push SVGs to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output

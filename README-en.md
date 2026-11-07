@@ -1,8 +1,8 @@
 <div align="right">
-  <a href="README.md">🇧🇷 Leia em Português</a>
+  <a href="https://github.com/RafaelJrS">🇧🇷 Português</a> | <b>🇺🇸 English</b>
 </div>
 
-<img align="right" width="280" src="https://raw.githubusercontent.com/gist/RafaelJrS/52f89361c6836344284ccba97ccf41af/raw/8a7518faab9ff41610f9a138ca7abe2d2b6ff707/gitprofilecard.svg" alt="GitProfile Card" />
+<img align="right" width="270" src="https://raw.githubusercontent.com/gist/RafaelJrS/52f89361c6836344284ccba97ccf41af/raw/8a7518faab9ff41610f9a138ca7abe2d2b6ff707/gitprofilecard.svg" alt="GitProfile Card" />
 
 <h1 align="left">Hi <img src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" width="26px" alt="Hi">, I'm Rafael Silva</h1>
 
@@ -26,16 +26,27 @@ I am a Software Quality specialist certified by **CTFL (ISTQB)**, focused on ens
 ### 🛠️ Tech Stack & Tools
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=java,nodejs,cypress,postman,postgres,sqlite,git,github,vscode" height="32" alt="Tech Stack" />
+  <img src="https://skillicons.dev/icons?i=java,ts,js,python,nodejs,cypress,selenium,postman,docker,postgres,sqlite,git,github,githubactions,vscode" height="32" alt="Tech Stack" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg" height="32" alt="Playwright" title="Playwright" />
   <img src="https://cdn.simpleicons.org/robotframework/00C0B5" height="32" alt="Robot Framework" title="Robot Framework" />
+  <img src="https://cdn.simpleicons.org/cucumber/23D96C" height="32" alt="Cucumber" title="Cucumber BDD" />
+  <img src="https://cdn.simpleicons.org/jira/0052CC" height="32" alt="Jira" title="Jira" />
 </p>
+
+### 🚀 Featured Automation Projects
+
+| Project | Stack | Description |
+| :--- | :--- | :--- |
+| 🔹 **[Play-swaglabs](https://github.com/RafaelJrS/Play-swaglabs)** | `Playwright` `TypeScript` | Modern Web E2E test automation suite built with Playwright and TypeScript. |
+| 🤖 **[swaglabs_robotframework](https://github.com/RafaelJrS/swaglabs_robotframework)** | `Robot Framework` `Python` | Structured E2E automated test suite using Robot Framework. |
+| 🛒 **[AmazonTesteRobot](https://github.com/RafaelJrS/AmazonTesteRobot)** | `Robot Framework` `BDD` | Automated e-commerce search and validation flows on Amazon. |
+| ☕ **[SeuBarrigaSeleniumWebDriver](https://github.com/RafaelJrS/SeuBarrigaSeleniumWebDriver)** | `Selenium` `Java` | Functional Web test automation built with Java and Selenium WebDriver. |
 
 ### ⚙️ GitHub Analytics
 
 <div align="center">
   <a href="https://github.com/RafaelJrS">
-    <img height="150" src="https://github-readme-stats.vercel.app/api?username=RafaelJrS&show_icons=true&theme=tokyonight&include_all_commits=true" alt="GitHub Stats" />
+    <img height="155" src="https://raw.githubusercontent.com/RafaelJrS/RafaelJrS/output/github-stats-en.svg" alt="GitHub Stats" />
   </a>
 </div>
 
