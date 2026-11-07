@@ -1,23 +1,49 @@
 name: Generate Datas
 
 on:
-  schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
+  schedule: # executa a cada 12 horas (5 minutos após o pacman)
+    - cron: "5 */12 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: output-branch-deploy
+  cancel-in-progress: false
 
 jobs:
   build:
     name: Jobs to update datas
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
-    steps:
-      # Snake Animation
-      - uses: Platane/snk@master
-        id: snake-gif
-        with:
-          github_user_name: RafaelJrS
-          svg_out_path: dist/github-contribution-grid-snake.svg
+    timeout-minutes: 5
 
-      - uses: crazy-max/ghaction-github-pages@v2.1.3
+    steps:
+      - name: Checkout existing files from output branch
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          ref: output
+          path: prev_output
+
+      # Snake Animation
+      - name: Generate snake contribution grid
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Preserve existing SVGs from output branch
+        run: |
+          mkdir -p dist
+          cp -n prev_output/*.svg dist/ 2>/dev/null || true
+
+      - name: Push snake svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
